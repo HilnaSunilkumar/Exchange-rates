@@ -1,0 +1,43 @@
+<div class="dates">Release Date: April 27, 2022</div>
+<div class="tableunit">
+  (Rates in currency units per one Bitcoin is listed)
+</div>
+<table border="0" cellpadding="0" cellspacing="0" class="statistics">
+  <thead>
+    <tr>
+      <th id="a1" colspan="1">NAME</th>
+      <th id="a2">UNIT</th>
+      <th id="a3">VALUE</th>
+      <th id="a4">TYPE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let key of listkey">
+      <th id="r1" headers="a1">{{ result.rates[key].name | uppercase }}</th>
+      <td headers="a2 a1 r1">{{ result.rates[key].unit }}</td>
+      <td headers="a3 a1 r1">{{ result.rates[key].value }}</td>
+      <td headers="a4 a1 r1">{{ result.rates[key].type | uppercase }}</td>
+    </tr>
+  </tbody>
+</table>
+<span>
+  <br />
+  Please visit the Currency Weights page
+  (http://www.federalreserve.gov/releases/H10/Weights) for current weights and
+  country composition of the Broad Index.
+  <br />
+  <br />
+  * Currency value per Bitcoin unit.
+  <br />
+  <br />
+  1) A weighted average of the foreign exchange value of the U.S. dollar against
+  the currencies of a broad group of major U.S. trading partners.
+  <br />
+  2) A weighted average of the foreign exchange value of the U.S. dollar against a
+  subset of the broad index currencies that are advanced foreign economies.
+  <br />
+  3) A weighted average of the foreign exchange value of the U.S. dollar against a
+  subset of the broad index currencies that are emerging market economies.
+  <br />
+</span>
+
